@@ -1,0 +1,5 @@
+#dcc48e :- highlight
+#eaefd3
+#f3a712 :- highlight
+#563f1b :- base
+#f7f9f9 :- background
