@@ -6,6 +6,6 @@ function showCart()
 
 function hideCart()
 {
-    document.getElementById('cart').style.display='block';
-    document.getElementById('fbutton').style.display='none';
+    document.getElementById('cart').style.display='none';
+    document.getElementById('fbutton').style.display='block';
 }
