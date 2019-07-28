@@ -140,7 +140,7 @@ header a:hover{
 }
 
 .btn:hover{
-    color: #fff;
+    color: #ffffff;
     background-color: #f3a712;
     transition: 0.8s;
 }
@@ -173,20 +173,50 @@ header a:hover{
     position: fixed;
     top: 110px;
     right: 50px;
-    z-index: 999;
-    cursor: pointer;
+    z-index: 3;
+
 }
 
 .fb-holder{
     width: 100px;
     height: 60px;
+    border: 0px;
     border-radius: 30px;
     background-color: #f3a712;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 
 
 .fb-holder:focus{
     outline: 0;
+}
+
+/*.cart-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    
+    z-index: 2; 
+}*/
+
+.cart{
+    position: fixed;
+    top: 14.5%;
+    left: 75%;
+    width: 300px;
+    height: 550px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    background: #fffcf6;
+    z-index: 4;
+    display: none;
+}
+
+.cart h2{
+    text-align: center;
 }
