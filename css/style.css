@@ -235,3 +235,8 @@ header a:hover{
     display: grid;
     grid-template-columns: (3,33%);
 }
+
+#Sort{
+    left: 70%;
+    margin-top: 20px;
+}
