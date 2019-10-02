@@ -264,7 +264,7 @@ function hideCart()
           //  final1 = final1.concat("<div><button class='button btn'>Add To Cart</button></div></div>");
           final1 = final1.concat(str);
        }
-        //document.getElementById('grid1').innerHTML = final1;
+        document.getElementById('grid1').innerHTML = final1;
    }
 
    function sortDescending(){
@@ -286,8 +286,6 @@ function hideCart()
     }
      document.getElementById('grid1').innerHTML = final1;
 }
-
-
    
    
    
