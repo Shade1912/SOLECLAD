@@ -284,6 +284,7 @@ function hideCart()
        //  final1 = final1.concat("<div><button class='button btn'>Add To Cart</button></div></div>");
        final1 = final1.concat(str);
     }
+     //template 'final1' is not getting pushed using innerHTML  
      document.getElementById('grid1').innerHTML = final1;
 }
    
