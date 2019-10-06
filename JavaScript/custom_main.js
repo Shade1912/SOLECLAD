@@ -17,7 +17,7 @@ function hideCart()
       
                  
 
-   var top=-1;
+   var top_var=-1;
    let i=0;
    const final=[
            {id:1,title:"Vans OldSkool X Bape Camo",price:4999,img:"./draft/bape camo.png"},
@@ -40,7 +40,7 @@ function hideCart()
    var top2=-1;
    var top3=-1;
    function isempty(){
-       if(s[top]==-1)
+       if(s[top_var]==-1)
        return 1;
        else
        return 0;
@@ -48,7 +48,7 @@ function hideCart()
    }
     
    function isfull(){
-       if(s[top]==9)
+       if(s[top_var]==9)
            return 1;
            else 
            return 0;
@@ -59,24 +59,24 @@ function hideCart()
            console.log('stack full');
            return;
        }
-       top++;
-       s[top]=x;
+       top_var++;
+       s[top_var]=x;
     
    }
    function popp(){
-       var t=s[top];
+       var t=s[top_var];
        if(isempty()==1){
            console.log('nothing in stack');
            return;
        }
        
-       top--;
+       top_var--;
        s.pop();
        return t ;
    }
     
    function peek(){
-       var t=s[top];
+       var t=s[top_var];
        if( isempty()==1){
            console,log('nothing in stack');
        }
@@ -215,9 +215,10 @@ function hideCart()
    let tem;
    var j=0;
    function ascendingorder(){
+	   debugger;
    while(s.length!=0){
-       tem= s[top];
-       tem2=v[top];
+       tem= s[top_var];
+       tem2=v[top_var];
       // console.log(temp);
        popp();
        popp2();
@@ -237,6 +238,7 @@ function hideCart()
    //pushes value of price to array 
    for(var z=0;z<final.length;z++)
    {
+	   console.log("For loop called");
        pushh(final[z].price);
        pushh2(final[z].id);
       
@@ -264,7 +266,7 @@ function hideCart()
           //  final1 = final1.concat("<div><button class='button btn'>Add To Cart</button></div></div>");
           final1 = final1.concat(str);
        }
-        document.getElementById('grid1').innerHTML = final1;
+       // document.getElementById('grid1').innerHTML = final1;
    }
 
    function sortDescending(){
@@ -288,7 +290,9 @@ function hideCart()
      document.getElementById('grid1').innerHTML = final1;
 }
    
-   
+ sortAscending();
+console.log(final1);
+ 
    
    
    
